@@ -21,3 +21,4 @@ Route::get('/customers', [CustomerController::class, 'index']);
 Route::get('/customers/{customer}', [CustomerController::class, 'show']);
 Route::get('/payment-cycles', [PaymentCycleController::class, 'index']);
 Route::get('/payment-cycles/{paymentCycle}', [PaymentCycleController::class, 'show']);
+Route::get('/dashboard', 'GeneralController@dashboard');
