@@ -47,7 +47,7 @@ class PaymentCycleController extends Controller
         $paymentCycle->update($request->all());
 
         return redirect()->route('payment-cycles.index')
-            ->with('success', 'Payment Cycle updated successfully');
+            ->with('success', 'Payment_Cycle updated successfully');
     }
 
     public function destroy(PaymentCycle $paymentCycle)
@@ -55,6 +55,6 @@ class PaymentCycleController extends Controller
         $paymentCycle->delete();
 
         return redirect()->route('payment-cycles.index')
-            ->with('success', 'Payment Cycle deleted successfully');
+            ->with('success', 'Payment_Cycle deleted successfully');
     }
 }

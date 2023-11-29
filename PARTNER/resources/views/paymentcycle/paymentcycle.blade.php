@@ -23,7 +23,7 @@
 
 @push('styles')
     <style>
-        /* Add your custom styles here */
+       
         .payment-cycle-details-container {
             max-width: 600px;
             margin: 0 auto;

@@ -1,0 +1,41 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+class CreateCustomerpaymentsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('customerpayments', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('customer_id')->constrained('customers');
+            $table->foreignId('paymentcycle_id')->constrained('paymentcycles');
+            $table->string('full_name');
+            $table->string('email');
+            $table->string('phone_number');
+            $table->string('id_number');
+            $table->decimal('amount', 10, 2);
+            $table->string('payment_reference');
+            $table->string('payment_sacco');
+            $table->timestamps();
+        });
+    }
+
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('customerpayments');
+    }
+}

@@ -9,7 +9,7 @@
         {{-- Display customer information --}}
         <div class="customer-details">
             <p><strong>ID:</strong> {{ $customer->id }}</p>
-            <p><strong>Name:</strong> {{ $customer->name }}</p>
+            <p><strong>Full Name:</strong> {{ $customer->full_name }}</p>
             <p><strong>Email:</strong> {{ $customer->email }}</p>
             <p><strong>Phone Number:</strong> {{ $customer->phone_number }}</p>
             <p><strong>ID Number:</strong> {{ $customer->id_number }}</p>
