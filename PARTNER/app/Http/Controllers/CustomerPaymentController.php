@@ -10,9 +10,9 @@ class CustomerPaymentController extends Controller
     public function index()
     {
         $customerPayments = CustomerPayment::all();
-        return response()->json($customerPayments);
+        return view('customerpayment', ['customerPayments' => $customerPayments]);
     }
-
+    
     public function store(Request $request)
     {
         $validatedData = $request->validate([

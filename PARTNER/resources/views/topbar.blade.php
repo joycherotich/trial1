@@ -55,7 +55,6 @@
                                 <a class="nav-link" href="javascript:;" role="button" data-toggle="dropdown">
                                     <img src="{{ asset('images/user7.jpg') }}" width="20" alt="" />
                                     <div class="header-info">
-                                        <!-- <span>{{@session('fname')}}<strong> {{@session('lname')}}</strong></span> -->
                                     </div>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">

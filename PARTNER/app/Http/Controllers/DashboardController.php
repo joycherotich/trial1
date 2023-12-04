@@ -9,10 +9,9 @@ class DashboardController extends Controller
 {
     public function dashboard()
     {
-        // You can add any logic here to fetch data for the dashboard
-        // For example, fetching total amount, total statements, etc.
-        $totalAmount = 1000; // Replace with your logic to get total amount
-        $totalStatements = 50; // Replace with your logic to get total statements
+      
+        $totalAmount = 1000; 
+        $totalStatements = 50; 
 
         return view("dashboard", compact('totalAmount', 'totalStatements'));
     }

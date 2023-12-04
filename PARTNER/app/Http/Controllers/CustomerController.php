@@ -21,12 +21,6 @@ class CustomerController extends Controller
 
     public function store(Request $request)
     {
-        // $validatedData = $request->validate([
-        //     'full_names' => 'required',
-        //     'email' => 'required|email|unique:customers',
-        //     'phone_number' => 'required|unique:customers',
-        //     'id_number' => 'required|unique:customers',
-        // ]);
     
         $customer = Customer::create($request->all());
     
@@ -50,7 +44,7 @@ class CustomerController extends Controller
     public function destroy(Customer $customer)
     {
         $customer->delete();
-
-        return response()->json(null);
+    
+        return response()->json(null, 204);
     }
 }

@@ -44,3 +44,10 @@ Route::post('/customer-payments', [CustomerPaymentController::class,'store']);
 
 
 Route::get('/customers', [CustomerController::class, 'index']);
+Route::get('/customer-payments', [CustomerPaymentController::class, 'index']);
+Route::get('/customer-payments/{customerPayment}', [CustomerPaymentController::class, 'show']);
+Route::post('/customer-payments', [CustomerPaymentController::class, 'store']);
+Route::put('/customer-payments/{customerPayment}', [CustomerPaymentController::class, 'update']);
+Route::delete('/customer-payments/{customerPayment}', [CustomerPaymentController::class, 'destroy']);
+
+

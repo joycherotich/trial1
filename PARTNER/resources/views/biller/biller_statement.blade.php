@@ -13,8 +13,8 @@
 
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="#">Biller</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Biller Statements</li>
+				<li class="breadcrumb-item"><a href="#">Statement</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Statements</li>
 			</ol>
 		</nav>
 
@@ -67,7 +67,7 @@
 
 						<div class="row">
 							<div> <span class="float-left">
-									<h6 class='text-muted '> Biller Transactions <small>(<span class="color5" id="duration"></span>)</small></h6>
+									<h6 class='text-muted '> Transactions <small><span class="color5" id="duration"></span></small></h6>
 								</span>
 							</div>
 

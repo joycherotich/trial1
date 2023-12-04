@@ -13,11 +13,7 @@ class PaymentCycleController extends Controller
         return response()->json($paymentCycles);
     }
 
-    // public function create()
-    // {
-    //     return response()->json('payment_cycles.create');
-    // }
-
+   
     public function store(Request $request)
     {
         $validatedData = $request->validate([
@@ -42,7 +38,6 @@ class PaymentCycleController extends Controller
 
     public function update(Request $request, PaymentCycle $paymentCycle)
     {
-        // Validate the request
 
         $paymentCycle->update($request->all());
 

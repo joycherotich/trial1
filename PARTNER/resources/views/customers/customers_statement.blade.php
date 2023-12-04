@@ -6,7 +6,7 @@
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Customers</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Customers Statement</li>
+                <li class="breadcrumb-item active" aria-current="page">Customers Details</li>
             </ol>
         </nav>
 
@@ -17,10 +17,10 @@
                         <div class="row mt-1" id="filter_records_form">
                             <div class="col-lg-3 mb-2">
                                 <div class="media">
-                                    <!-- Your filter form goes here -->
+                                 
                                 </div>
                             </div>
-                            <!-- Add more filter columns if needed -->
+                           
 
                         </div>
                         <hr>
@@ -28,7 +28,7 @@
                         <div class="row">
                             <div>
                                 <span class="float-left">
-								<h6 class='text-muted '> Customer Details <small>(<span class="color5" id="duration"></span>)</small></h6>
+								<h6 class='text-muted '> Customer Details <small><span class="color5" id="duration"></span></small></h6>
                                 </span>
                             </div>
 
@@ -37,7 +37,6 @@
                                     <thead>
                                         <tr>
 
-											<th scope="col">ID</th>
                                             <th scope="col">Full Name</th>
                                             <th scope="col">Email</th>
                                             <th scope="col">Phone Number</th>
@@ -46,14 +45,14 @@
                                     </thead>
                                     <tbody id="records_table">
 									<tr>
-        <td>2</td>
-        <td>Joy Kirui Cherotich</td>
-        <td>letim@gmail.com</td>
-        <td>0741099846</td>
-        <td>38458778</td>
-        
-    </tr>
-									
+                                        
+                                        <td>Joy Kirui Cherotich</td>
+                                        <td>letim@gmail.com</td>
+                                        <td>0741099846</td>
+                                        <td>38458778</td>
+                                        
+                                    </tr>
+                                                                    
                                     </tbody>
                                 </table>
                             </div>

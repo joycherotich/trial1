@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomerController;
 use App\Http\Controllers\PaymentCycleController;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\CustomerPaymentController;
+
+use App\Http\Controllers\LoginController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,7 +44,8 @@ Route::get('/customers/{customer}', [CustomerController::class, 'show']);
 
 
 /*-----------------------customer---------------------------*/
-Route::get('customer_statement', function () {  return view('/customers.customers_statement');});
+Route::get('customers_statement', function () {  return view('/customers.customers_statement');});
+Route::get('customer_payment', function () {  return view('/customers.customer_statement');});
 Route::get('/customers/statement', [CustomerController::class, 'index']);
 
 
@@ -49,15 +53,11 @@ Route::get('/customers/statement', [CustomerController::class, 'index']);
 Route::get('/payment-cycles', [PaymentCycleController::class, 'index']);
 Route::get('/payment-cycles/{paymentCycle}', [PaymentCycleController::class, 'show']);
 
+
 // routes/web.php
 
+Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
+Route::post('/login', [LoginController::class, 'login']);
+Auth::routes();
 
-
-
-
-// Route::get('/api/payment-cycles', [PaymentCycleController::class, 'index']);
-// Route::get('/api/customers', [CustomerController::class, 'show']);
-// Route::post('/api/customers', [CustomerController::class, 'store']);
-// Route::post('/api/payment-cycles', [PaymentCycleController::class,'store']);
-// Route::get('/api/payment-cycles', [PaymentCycleController::class,'show']);
 

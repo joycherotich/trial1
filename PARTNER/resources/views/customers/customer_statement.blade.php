@@ -35,21 +35,33 @@
                             <div class="table-responsive recentOrderTable">
                                 
                                     <table class="table table-striped" id="datatable">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">ID</th>
-                                                <th scope="col">Customer ID</th>
-                                                <th scope="col">Payment Cycle ID</th>
-                                                <th scope="col">Full Name</th>
-                                                <th scope="col">Email</th>
-                                                <th scope="col">Phone Number</th>
-                                                <th scope="col">ID Number</th>
-                                                <th scope="col">Amount</th>
-                                                <th scope="col">Payment Reference</th>
-                                                <th scope="col">Payment Sacco</th>
-                                            </tr>
-                                        </thead>
-                                        
+                                    <tbody id="records_table">
+                                    <thead>
+    <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Payment Cycle ID</th>
+        <th scope="col">Full Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone Number</th>
+        <th scope="col">ID Number</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Payment Reference</th>
+       
+    </tr>
+</thead>
+    <tr>
+        <td>2</td>
+        <td>Annually</td>
+        <td>JOY KIRUI CHEROTICH</td>
+        <td>letimjoy7@gmail.com</td>
+        <td>0741099846</td>
+        <td>123456789</td>
+        <td>500.00</td>
+        <td>RTWYSND</td>
+       
+    </tr>
+   
+</tbody>
                                     </table>
                                
                             </div>

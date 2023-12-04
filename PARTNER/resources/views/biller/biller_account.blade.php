@@ -13,8 +13,8 @@
 
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="#">Biller</a></li>
-				<li class="breadcrumb-item active" aria-current="page">Biller Account</li>
+				<li class="breadcrumb-item"><a href="#">Account</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Account</li>
 			</ol>
 		</nav>
 
@@ -35,7 +35,7 @@
 							<div class="col-lg-3  col-md-4  col-sm-6 mb-2">
 								<div class="media">
 									<div class="media-body">
-										<span class="d-block  font-14 text-muted mb-2">Biller Name</span>
+										<span class="d-block  font-14 text-muted mb-2"> Name</span>
 										<p class="font-16 text-dark" id="biller_name">Liberty Insurance </p>
 									</div>
 								</div>
@@ -45,7 +45,7 @@
 								<div class="media">
 
 									<div class="media-body">
-										<span class="d-block  font-14 text-muted mb-2">Biller Number</span>
+										<span class="d-block  font-14 text-muted mb-2">Number</span>
 										<p class="font-16 text-dark" id="biller_number">OO6/LIB/INS</p>
 									</div>
 								</div>
@@ -79,7 +79,7 @@
 							<div class="col-lg-4  col-md-4  col-sm-6 mb-2">
 								<div class="media">
 									<div class="media-body">
-										<span class="d-block  font-14 text-muted mb-2">Biller Account Balance
+										<span class="d-block  font-14 text-muted mb-2"> Account Balance
 											<b>
 												<i class="ml-2 flaticon-381-repeat-1" onclick="load_biller_data();"></i>
 											</b> </span>
@@ -94,7 +94,7 @@
 						<hr>
 						<div class="row">
 							<div> <span class="float-left">
-									<h6 class='text-muted '>Recent Biller Transactions </h6>
+									<h6 class='text-muted '>Recent Transactions </h6>
 								</span>
 
 								<span class="float-right">

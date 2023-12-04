@@ -1,6 +1,4 @@
-<!-- resources/views/payment_cycles/payment_cycle.blade.php -->
 
-@extends('layouts.app')
 
 @section('content')
     <div class="payment-cycle-details-container">

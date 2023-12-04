@@ -22,11 +22,11 @@
             <li>
                 <a class="has-arrow ai-icon" href="javascript:void()" aria-expanded="false">
                     <i class="flaticon-381-menu-2"></i>
-                    <span class="nav-text">Biller</span>
+                    <span class="nav-text">Liberty Statement</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{ URL::to('/biller_statement') }}">Biller Statement </a></li> 
-                    <li><a href="{{ URL::to('/biller_account') }}">Biller Account </a></li>             
+                    <li><a href="{{ URL::to('/biller_statement') }}">Liberty Statement </a></li> 
+                    <li><a href="{{ URL::to('/biller_account') }}">Liberty Details</a></li>             
                 </ul>
             </li>
 
@@ -37,7 +37,7 @@
                     <span class="nav-text">Customers</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{ URL::to('/customer_statement') }}">Customer Statement </a></li> 
+                    <li><a href="{{ URL::to('/customers_statement') }}">Customer Details </a></li> 
                     <li><a href="{{ URL::to('/customer_payment') }}">Customer Payment </a></li>  
                 </ul>
             </li>
@@ -51,10 +51,10 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="{{ URL::to('/profile') }}">Profile </a></li>         
-                    <!-- <li><a href="#">Users</a></li>                     -->
-                    <!-- <li><a href="#">Roles </a></li>                     -->
-                    <!-- <li><a href="#">Logs</a></li>  -->
-                </ul>
+                    <!-- <li><a href="#">Users</a></li>                    
+                    <li><a href="#">Roles </a></li>                    
+                    <li><a href="#">Logs</a></li> 
+                </ul> -->
             </li>
            
         </ul>
