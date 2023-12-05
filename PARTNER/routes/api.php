@@ -37,17 +37,17 @@ Route::get('/payment-cycles', [PaymentCycleController::class,'show']);
 Route::get('/payment-cycles', [PaymentCycleController::class, 'index']);
 
 // --------------------------------------
-Route::get('/customer-payments', [CustomerPaymentController::class,'show']);
-Route::get('/customer-payments', [CustomerPaymentController::class, 'index']);
-Route::post('/customer-payments', [CustomerPaymentController::class,'store']);
+Route::get('/customer_payments', [CustomerPaymentController::class,'show']);
+Route::get('/customer_payments', [CustomerPaymentController::class, 'index']);
+Route::post('/customer_payments', [CustomerPaymentController::class,'store']);
 // routes/web.php or routes/api.php
 
 
 Route::get('/customers', [CustomerController::class, 'index']);
-Route::get('/customer-payments', [CustomerPaymentController::class, 'index']);
-Route::get('/customer-payments/{customerPayment}', [CustomerPaymentController::class, 'show']);
-Route::post('/customer-payments', [CustomerPaymentController::class, 'store']);
-Route::put('/customer-payments/{customerPayment}', [CustomerPaymentController::class, 'update']);
-Route::delete('/customer-payments/{customerPayment}', [CustomerPaymentController::class, 'destroy']);
+Route::get('/customer_payments', [CustomerPaymentController::class, 'index']);
+Route::get('/customer_payments/{customerPayment}', [CustomerPaymentController::class, 'show']);
+// Route::post('/customer_payments', [CustomerPaymentController::class, 'store']);
+Route::put('/customer_payments/{customerPayment}', [CustomerPaymentController::class, 'update']);
+Route::delete('/customer_payments/{customerPayment}', [CustomerPaymentController::class, 'destroy']);
 
 

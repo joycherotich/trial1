@@ -45,7 +45,7 @@ Route::get('/customers/{customer}', [CustomerController::class, 'show']);
 
 /*-----------------------customer---------------------------*/
 Route::get('customers_statement', function () {  return view('/customers.customers_statement');});
-Route::get('customer_payment', function () {  return view('/customers.customer_statement');});
+Route::get('customer_payment', function () {  return view('/customers.customer_payment');});
 Route::get('/customers/statement', [CustomerController::class, 'index']);
 
 

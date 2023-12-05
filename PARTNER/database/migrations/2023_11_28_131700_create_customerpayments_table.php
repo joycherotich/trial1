@@ -13,7 +13,7 @@ class CreateCustomerpaymentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('customerpayments', function (Blueprint $table) {
+        Schema::create('customer_payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('customer_id')->constrained('customers');
             $table->foreignId('paymentcycle_id')->constrained('paymentcycles');
@@ -23,7 +23,6 @@ class CreateCustomerpaymentsTable extends Migration
             $table->string('id_number');
             $table->decimal('amount', 10, 2);
             $table->string('payment_reference');
-            $table->string('payment_sacco');
             $table->timestamps();
         });
     }

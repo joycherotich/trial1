@@ -9,6 +9,7 @@ class CustomerPayment extends Model
 {
     use HasFactory;
     protected $fillable = [
+        'id',
         'customer_id',
         'paymentcycle_id',
         'full_name',
@@ -17,7 +18,6 @@ class CustomerPayment extends Model
         'id_number',
         'amount',
         'payment_reference',
-        'payment_sacco',
     ];
 
     public function customer()

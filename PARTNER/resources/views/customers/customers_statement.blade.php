@@ -63,5 +63,24 @@
         </div>
     </div>
 </div>
+<script>
+fetch('http://127.0.0.1:8000/api/customers')
+        .then(response => response.json())
+        .then(data => {
+            // Iterate through the data and append rows to the table
+            data.forEach(customer => {
+                $('#records_table').append(`
+                    <tr>
+                        <td>${customer.full_names}</td>
+                        <td>${customer.email}</td>
+                        <td>${customer.phone_number}</td>
+                        <td>${customer.id_number}</td>
+                    </tr>
+                `);
+            });
+        })
+        .catch(error => console.error('Error:', error));
+</script>
+
 
 @include('includes.footer')

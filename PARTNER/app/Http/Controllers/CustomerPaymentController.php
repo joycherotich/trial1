@@ -8,26 +8,25 @@ use Illuminate\Http\Request;
 class CustomerPaymentController extends Controller
 {
     public function index()
-    {
-        $customerPayments = CustomerPayment::all();
-        return view('customerpayment', ['customerPayments' => $customerPayments]);
-    }
-    
+{
+    $customerPayments = CustomerPayment::all();
+    logger()->info($customerPayments);
+    return response()->json($customerPayments);
+}
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'customers_id' => 'required|exists:customers,id',
-            'paymentcycles_id' => 'required|exists:paymentcycles,id',
-            'full_names' => 'required',
-            'email' => 'required|email',
-            'phone_number' => 'required',
-            'id_number' => 'required',
-            'amount' => 'required|numeric',
-            'payment_reference' => 'required',
-            'payment_sacco' => 'required',
-        ]);
+        // $validatedData = $request->validate([
+        //     'customers_id' => 'required|exists:customers,id',
+        //     'paymentcycles_id' => 'required|exists:paymentcycle,id',
+        //     'full_name' => 'required',
+        //     'email' => 'required|email',
+        //     'phone_number' => 'required',
+        //     'id_number' => 'required',
+        //     'amount' => 'required|numeric',
+        //     'payment_reference' => 'required',
+        // ]);
 
-        $customerPayment = CustomerPayment::create($validatedData);
+        $customerPayment = CustomerPayment::create($request->all());
 
         return response()->json($customerPayment, 201);
     }
@@ -48,7 +47,6 @@ class CustomerPaymentController extends Controller
             'id_number' => 'required',
             'amount' => 'required|numeric',
             'payment_reference' => 'required',
-            'payment_sacco' => 'required',
         ]);
 
         $customerPayment->update($validatedData);
@@ -62,6 +60,4 @@ class CustomerPaymentController extends Controller
 
         return response()->json(null, 204);
     }
-
-    
 }
