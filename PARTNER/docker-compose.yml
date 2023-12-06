@@ -1,18 +1,16 @@
-version: '3'
-
-services:
-  php-app:
+  laravel-app:
     build:
       context: .
-      dockerfile: docker/php.dockerfile
+      dockerfile: ./Dockerfile
     ports:
-      - "8080:80"
-    depends_on:
-      - mysql-db
+      - "8082:80"
 
-  mysql-db:
-    build:
-      context: .
-      dockerfile: docker/mysql.dockerfile
-    ports:
-      - "3306:3306"
+    environment:
+      # DB_CONNECTION: mysql
+      # DB_HOST: mysql-db
+      # DB_PORT: 4306
+      DB_DATABASE: liberty_insurance_portal
+      DB_USERNAME: root
+      DB_PASSWORD: 1234
+
+
