@@ -59,5 +59,3 @@ Route::get('/payment-cycles/{paymentCycle}', [PaymentCycleController::class, 'sh
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 Auth::routes();
-
-
